@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Skills</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<header>
+<h1>Tyson</h1>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<div class="container">
+<div class="card">
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>Cybersecurity</li>
+</ul>
+
+<div id="skillsTable"></div>
+
+</div>
+</div>
+
+<footer>© 2025 Tyson Williams</footer>
+
+<script>
+function makeTable(){
+let skills=[["HTML","Good"],["CSS","Good"],["JS","Basic"]];
+
+let t="<table>";
+for(let i=0;i<skills.length;i++){
+t+="<tr><td>"+skills[i][0]+"</td><td>"+skills[i][1]+"</td></tr>";
+}
+t+="</table>";
+
+document.getElementById("skillsTable").innerHTML=t;
+}
+
+makeTable();
+</script>
+
+</body>
+</html>

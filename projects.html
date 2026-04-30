@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Projects</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<header>
+<h1>Tyson</h1>
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="skills.html">Skills</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<div class="container">
+<div class="card">
+
+<h2>Projects</h2>
+
+<div class="project-box">
+<details>
+<summary>View My Projects</summary>
+
+<div id="projectTable"></div>
+
+</details>
+</div>
+
+</div>
+</div>
+
+<footer>© 2025 Tyson Williams</footer>
+
+<script>
+function loadProjects(){
+    let projects = ["Portfolio Website","HTML Practice","Cybersecurity Work"];
+
+    let out = "<table><tr><th>Project</th></tr>";
+
+    for(let i=0;i<projects.length;i++){
+        out += "<tr><td>" + projects[i] + "</td></tr>";
+    }
+
+    out += "</table>";
+
+    document.getElementById("projectTable").innerHTML = out;
+}
+
+loadProjects();
+</script>
+
+</body>
+</html>
